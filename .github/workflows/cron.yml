@@ -9,4 +9,4 @@ jobs:
       - name: Call our API route
         run: |
           curl --request POST \
-          --url 'htpps://${{ secrets.APP_DOMAIN }}/api/cron' \
+          --url 'https://${{ secrets.APP_DOMAIN }}/api/cron' \

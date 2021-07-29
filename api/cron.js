@@ -26,8 +26,7 @@ module.exports = async (req, res) => {
 
       // post all tweets from date range on twitter
       data.forEach(async ({data: {tweet}}) => {
-        console.log(tweet)
-        //   await twitterClient.v1.tweet(tweet)
+        await twitterClient.v1.tweet(tweet)
       })
       res.status(200).json({success: true})
     } catch (err) {
